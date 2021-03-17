@@ -7,7 +7,7 @@ function App() {
   const[nasaData, setNasaData] = useState([])
   
   useEffect(()=> {
-    axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2012-03-14")
+    axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=")
     .then(res => {
       setNasaData(res.data);
     })
@@ -21,7 +21,8 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p>
-      <DataContainer nasaData={nasaData} />
+      <DataContainer nasaData={nasaData}  />
+      
     </div>
   );
 }
