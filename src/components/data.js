@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from "styled-components"
 
 const DataContainer = (props) => {
     const { nasaData } = props;
@@ -6,7 +7,7 @@ const DataContainer = (props) => {
   return ( 
       <div> 
           {nasaData && <img src ={nasaData.url} />}
-            {console.log(nasaData)};
+            {console.log(nasaData)}
 
       </div>
   )  

@@ -24,7 +24,7 @@ function App() {
       <DataContainer nasaData={nasaData}  />
       
     </div>
-  );
+  )
 }
 
 export default App;
