@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components"
-
+const StyledTitle = styled.div`
+color:red;
+` 
 const DataContainer = (props) => {
     const { nasaData } = props;
     
@@ -8,8 +10,13 @@ const DataContainer = (props) => {
       <div> 
           {nasaData && <img src ={nasaData.url} />}
             {console.log(nasaData)}
-        {nasaData && <p src = {nasaData.title} />}
-        {console.log(nasaData.title)}
+             {nasaData && <h1 title= {nasaData.title} />}
+                 {console.log(nasaData.title)}
+                 <StyledTitle className ='title'>
+                    {nasaData.title}
+        
+
+                 </StyledTitle>
       </div>
   )  
 } 
