@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from 'axios';
+import Data from "../src/Components/Nasa"
 
 function App() {
   const [nasaData, setNasaData] = useState([])
@@ -19,6 +20,7 @@ function App() {
       <nav>
        Nasa Photo of the Day <span role="img" aria-label='go!'>🚀</span>!
       </nav>
+      <Data nasaData={nasaData} nasaDate={nasaData.date} />
     </div>
   );
 }
